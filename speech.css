@@ -3,7 +3,7 @@
 :root {
     --theme-color: #FA0748;
 }
-body {
+*{
     font-family: 'Comfortaa', cursive;
 }
 .container {
