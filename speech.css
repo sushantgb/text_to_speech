@@ -1,0 +1,273 @@
+:root {
+    --theme-color: #FA0748;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: var(--theme-color);
+    color: white;
+    margin: auto;
+    margin-top: 1em;
+    width: 50%;
+    height: 80vh;
+    padding: 4em;
+    border-radius: 0.5em;
+    gap: 1em;
+    max-height: fit-content;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+/* voice options and language options */
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--theme-color);
+    font-weight: bold;
+    font-size: 1em;
+}
+.voice-div, .lang-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8em;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+select {
+    padding: 0.6em;
+    border-style: none;
+    border-radius: 0.2em;
+    width: 14em;
+    font-weight: bold;
+    color: white;
+    outline-color: var(--theme-color);
+    background-color: var(--theme-color);
+}
+select:focus{
+    outline-color: var(--theme-color);
+}
+option{
+    padding: 1em;
+}
+/* output buttons */
+.button-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2em;
+    gap: 1em;
+    background-color: white;
+    padding: 0.5em 1em;
+}
+.button-control button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0em;
+    border-style: none;
+    transition: all 0.8s;
+    color: var(--theme-color);
+}
+.button-control i{
+    font-size: 3em;
+    background-color: white;
+    text-align: center;
+    /* text-shadow: -1px 1px 5px var(--theme-color); */
+}
+
+.button-control button:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+/* input field and voice controls */
+.input-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    width: 100%;
+}
+
+textarea {
+    width: 25em;
+    height: 5em;
+    resize: none;
+    border-radius: 0.2em;
+    border-style: none;
+    padding: 1em;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--theme-color);
+}
+
+textarea:focus {
+    outline-color: var(--theme-color);
+}
+
+.voice-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    color: var(--theme-color);
+}
+
+.volume-div,
+.rate-div,
+.pitch-div {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+    padding: 0.2em;
+    border-radius: 0.2em;
+}
+
+/* for slider styling */
+.voice-control input[type="range"] {
+    -webkit-appearance: none;
+    border-radius: 2em;
+    height: 0.4em;
+    background-color: var(--theme-color);
+}
+
+.voice-control span {
+    border-radius: 0.2em;
+    width: 50%;
+    text-align: center;
+    padding: 0.5em;
+    margin: auto;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1000px) and (max-height:1500px) {
+    
+.container {
+    margin: auto;
+    align-self: center;
+    width: 90%;
+    height: 90vh;
+    padding: 1em;
+    gap: 1em;
+    text-align: center;
+    max-height: fit-content;
+    font-size: 0.8em;
+}
+
+/* voice options and language options */
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--theme-color);
+    font-weight: bold;
+    font-size: 1em;
+}
+.voice-div, .lang-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8em;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+select {
+    padding: 0.6em;
+    border-style: none;
+    border-radius: 0.2em;
+    width: 14em;
+    font-weight: bold;
+    color: white;
+    outline-color: var(--theme-color);
+    background-color: var(--theme-color);
+}
+select:focus{
+    outline-color: var(--theme-color);
+}
+option{
+    padding: 1em;
+}
+.button-control i{
+    font-size: 2em;
+    background-color: white;
+    text-align: center;
+    /* text-shadow: -1px 1px 5px var(--theme-color); */
+}
+
+.button-control button:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+/* input field and voice controls */
+
+textarea {
+    width: 10em;
+    height: 5em;
+}
+
+textarea:focus {
+    outline-color: var(--theme-color);
+}
+
+.voice-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    color: var(--theme-color);
+}
+
+.volume-div,
+.rate-div,
+.pitch-div {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+    padding: 0.2em 0.7em;
+    border-radius: 0.2em;
+}
+
+/* for slider styling */
+.voice-control input[type="range"] {
+    -webkit-appearance: none;
+    border-radius: 2em;
+    height: 0.4em;
+    background-color: var(--theme-color);
+}
+
+.voice-control span {
+    border-radius: 0.2em;
+    width: 50%;
+    text-align: center;
+    padding: 0.5em;
+    margin: auto;
+    font-weight: bold;
+}
+}
