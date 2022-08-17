@@ -7,6 +7,8 @@ Controls are provided to change:
 - Volume
 - Speed
 - Pitch
+
+And to control:
 - Start Speech
 - Stop Speech
 - Pause Speech
