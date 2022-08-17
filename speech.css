@@ -15,10 +15,10 @@
     background-color: var(--theme-color);
     color: white;
     margin: auto;
-    margin-top: 0.5em;
+    margin-top: 0.2em;
     width: 20%;
-    height: 80vh;
-    padding: 4em;
+    height: 88vh;
+    padding: 2em;
     border-radius: 0.5em;
     gap: 0.5em;
     max-height: fit-content;
@@ -46,7 +46,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    gap: 0.8em;
+    gap: 0.5em;
     background-color: white;
     padding: 0.5em;
     border-radius: 0.2em;
