@@ -25,6 +25,13 @@
  let pitchSpan = document.getElementById("pitch-control");
  let rateSpan = document.getElementById("rate-control");
 
+ //spans for language switch
+ let langTag = document.querySelector(".lang-div span");
+ let voiceTag = document.querySelector(".voice-div span");
+ let volTag = document.querySelector(".volume-div span");
+ let rateTag = document.querySelector(".rate-div span");
+ let pitchTag = document.querySelector(".pitch-div span");
+
  //for displaying voice options
  window.speechSynthesis.onvoiceschanged = () => {
      voiceSelection = window.speechSynthesis.getVoices(); //adding voice in global array
@@ -32,7 +39,7 @@
      voiceSelection.forEach(voiceOptions);  //calling inside the array for each option         
      function voiceOptions(voice, i) {
          (voiceInput.options[i] = new Option(voice.name, i));
-     }
+     }     
  };
 
  //to read text
@@ -58,6 +65,11 @@
              speech.lang = 'hi';
              heading.innerHTML = "हिन्दी में भाषण के लिए पाठ";
              textVal.setAttribute('placeholder', 'अपना पाठ सुनने के लिए यहाँ  लिखें');
+             langTag.innerHTML = "भाषा";
+             voiceTag.innerHTML = "ध्वनि";
+             volTag.innerHTML = "मात्रा";
+             rateTag.innerHTML = "गति";
+             pitchTag.innerHTML = "स्वरमान";
              break;
      }
  });
